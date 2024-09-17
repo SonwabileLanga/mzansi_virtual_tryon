@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Mzansi Virtual Try-On</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Your Virtual Try-On Result</h2>
+            <img src="{{ url_for('static', filename=image_url) }}" alt="Try-On Result" style="max-width:100%;">
+            <p>Check out this clothing at the following store:</p>
+            <a href="{{ shop_url }}" target="_blank">Visit Store</a>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Mzansi Virtual Try-On. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
